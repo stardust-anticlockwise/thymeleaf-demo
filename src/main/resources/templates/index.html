@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+<!--    <link rel="stylesheet" type="text/css" th:href="@{../main.css}">-->
+</head>
+<body>
+index.......
+<!--把[name=张飞]送过来-->
+<!--<p th:text="${name}"></p>-->
+
+<hr>
+<!--<p>-->
+<!--    <span th:text="${user.uid}"></span>-->
+<!--    <span th:text="${user.uname}"></span>-->
+<!--    <span th:text="${user.usex}"></span>-->
+<!--</p>-->
+
+<!--实现列表数据的展示-->
+<!--<p th:each="user,iterStat : ${list}">-->
+<!--    <span th:text="${iterStat.index}"></span>-->
+<!--    <span th:text="${user.uid}"></span>-->
+<!--    <span th:text="${user.uname}"></span>-->
+<!--    <span th:text="${user.usex}"></span>-->
+<!--</p>-->
+
+<!--图片展示-->
+<!--<img src="../1.jpg">-->
+<!--<img th:src="${image1}">-->
+
+<!--实现模板中字符串拼接功能-->
+<!--<p th:text="'欢迎你，'+${name}+'，来到thymeleaf世界'"></p>-->
+<!--<p th:text="|欢迎你，${name}，来到thymeleaf世界|"></p>-->
+
+<!--实现模板中选择判断功能-->
+<!--<span th:if="${bo == 'yes'}">中公35</span>-->
+
+<!--加载静态文件-->
+<p>测试css文件是否加载成功</p>
+<hr>
+<div th:insert="~{footer :: copy}">
+
+</div>
+<hr>
+<div th:replace="~{footer :: copy}">
+
+</div>
+<hr>
+<div th:include="~{footer :: copy}">
+
+</div>
+</body>
+</html>
