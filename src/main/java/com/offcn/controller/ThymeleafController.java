@@ -87,4 +87,8 @@ public class ThymeleafController {
     public String seventh(){
         return "index.html";
     }
+
+    public String ggg(){
+        return null;
+    }
 }
